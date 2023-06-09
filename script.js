@@ -1,3 +1,4 @@
+// After 2.8s animation end
 let loader = document.getElementById("animation-loading");
 
 setTimeout(() => {

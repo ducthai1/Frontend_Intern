@@ -1,3 +1,5 @@
+/* Animation */
+
 #animation-loading {
     background-color: #2e344d;
     position: fixed;
@@ -43,6 +45,8 @@
         filter: hue-rotate(180deg);
     }
 }
+
+/* Animation for company name */
 
 .company-name {
     font-size: 48px;
