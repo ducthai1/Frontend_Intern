@@ -8,8 +8,6 @@
     .category {
         display: grid;
         flex-wrap: wrap;
-        max-width: 200vh;
-        height: 989px;
         grid-template-columns: auto;
         grid-template-rows: 1fr;
     }
@@ -81,8 +79,6 @@
     .category {
         display: grid;
         flex-wrap: wrap;
-        max-width: 200vh;
-        height: 989px;
         grid-template-columns: auto;
         grid-template-rows: 1fr;
     }
