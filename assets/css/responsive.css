@@ -1,5 +1,6 @@
 /* Mobile */
 @media (max-width: 739px) {
+
     .company-name {
         position: relative;
         left: 39.5%;
@@ -8,6 +9,8 @@
     .category {
         display: grid;
         flex-wrap: wrap;
+        max-width: 200vh;
+        height: 989px;
         grid-template-columns: auto;
         grid-template-rows: 1fr;
     }
@@ -71,6 +74,7 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+
     .company-name {
         position: relative;
         left: 41.5%;
@@ -79,6 +83,8 @@
     .category {
         display: grid;
         flex-wrap: wrap;
+        max-width: 200vh;
+        height: 989px;
         grid-template-columns: auto;
         grid-template-rows: 1fr;
     }

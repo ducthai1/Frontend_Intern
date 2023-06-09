@@ -24,7 +24,10 @@
     justify-content: center;
     box-shadow: 3px 10px 25px 0px #2B0D134D;
     background: var(--primary-circle);
-
+    -webkit-transition: transform .9s ease;
+    -moz-transition: transform .9s ease;
+    -ms-transition: transform .9s ease;
+    -o-transition: transform .9s ease;
 }
 
 .category__ellipse-right-circle1000 span {
