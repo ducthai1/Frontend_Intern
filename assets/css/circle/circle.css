@@ -44,6 +44,7 @@
     width: 246px;
     height: 246px;
     display: flex;
+    z-index: 0;
     margin-left: 24px;
     border-radius: 50%;
     margin-top: 188px;
