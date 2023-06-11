@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 20;
 }
 
 .chat-box {
@@ -116,7 +116,7 @@ button {
     font-weight: 600;
     border: none;
     border-radius: 20px;
-    background: #000;
+    background: #484848;
     padding: 0;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -127,7 +127,7 @@ button {
 .button_top {
     display: block;
     box-sizing: border-box;
-    border: 2px solid #000;
+    border: 2px solid #484848;
     border-radius: 20px;
     padding: 0.75em 1.5em;
     background: var(--primary-circle);

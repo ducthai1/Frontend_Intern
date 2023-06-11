@@ -15,9 +15,13 @@
         grid-template-rows: 1fr;
     }
 
+    .about-message {
+        z-index: 4;
+    }
+
     .category__content-about,
     .category__slogan {
-        z-index: 10;
+        z-index: 3;
     }
 
     .category__slogan {
@@ -91,7 +95,11 @@
 
     .category__content-about,
     .category__slogan {
-        z-index: 10;
+        z-index: 3;
+    }
+
+    .about-message {
+        z-index: 4;
     }
 
     .category__content-about {
