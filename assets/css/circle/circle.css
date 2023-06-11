@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     outline: 3px dashed var(--border-color);
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .category__ellipse-right-circle1000 {
