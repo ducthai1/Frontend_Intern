@@ -5,8 +5,8 @@
 }
 
 .message-box {
-    background-color: #b0ccf0;
-    /* background-color: #61a2f659; */
+    /* background-color: #b0ccf0; */
+    background-color: #61a2f659;
     width: 60px;
     border: 1px solid #33333359;
     height: 60px;
