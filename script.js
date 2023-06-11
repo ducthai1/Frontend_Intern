@@ -98,9 +98,14 @@ function sendMessage() {
   var messageText = messageInput.value;
 
   if (messageText.trim() !== "") {
-    var messageElement = document.createElement("div");
-    messageElement.textContent = messageText;
-    document.querySelector(".chat-body").appendChild(messageElement);
+    //------C1------
+    // var messageElement = document.createElement("div");
+    // messageElement.textContent = messageText;
+    // document.querySelector(".chat-body").appendChild(messageElement);
+    //------C2------
+    var chatMessages = document.getElementById("chat-messages");
+    chatMessages.innerHTML +=
+      "<div class='item-chat-body' >" + messageText + "</div>";
     messageInput.value = "";
   }
 }

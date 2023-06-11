@@ -86,6 +86,10 @@
     font-size: 14px;
 }
 
+.item-chat-body {
+    padding: 4px;
+}
+
 .chat-footer {
     display: flex;
     padding: 10px;
