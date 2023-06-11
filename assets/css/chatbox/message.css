@@ -1,0 +1,146 @@
+.about-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.message-box {
+    background-color: #61a2f659;
+    width: 60px;
+    border: 1px solid #33333359;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px #9d9d9d;
+    display: flex;
+}
+
+.message-box:hover {
+    scale: 105%;
+    opacity: 80%;
+}
+
+.icon-send {
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+.message-icon {
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-box {
+    display: none;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    width: 300px;
+    height: 385px;
+    background-color: #f1f1f1;
+    border: 1px solid #9292927b;
+    border-radius: 15px;
+    box-shadow: 3px 3px #5b747a6e;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.chat-header {
+    background-color: rgba(158, 196, 246, 0.512);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.chat-title {
+    font-weight: bold;
+    color: var(--primary-blue);
+    padding: 2px;
+}
+
+.close-button {
+    cursor: pointer;
+    color: #000;
+}
+
+.close-button:hover {
+    color: #ec0000f5;
+}
+
+.chat-body {
+    height: 280px;
+    overflow-y: scroll;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.chat-footer {
+    display: flex;
+    padding: 10px;
+}
+
+#chatInput:focus-visible {
+    outline: none;
+}
+
+#chatInput {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 10px;
+    margin-top: -3px;
+    margin-bottom: 3px;
+    box-shadow: 1px 3px #888888;
+    border-radius: 20px;
+    border: 1px solid #6c6c6c;
+    -webkit-border-radius: 20px;
+}
+
+button {
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    background: #000;
+    padding: 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 0.75em 1.5em;
+    background: var(--primary-circle);
+    color: #fff;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+}

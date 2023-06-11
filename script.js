@@ -5,7 +5,7 @@ setTimeout(() => {
   loader.remove();
 }, 2800);
 window.onload = function (setTimeout) {};
-
+// --------------------------- Notification ---------------------------------
 // Toast function
 function toast({ title = "", message = "", type = "info", duration = 3000 }) {
   const main = document.getElementById("toast");
@@ -58,3 +58,63 @@ function showSuccessToast() {
     duration: 5000,
   });
 }
+
+// --------------------------------- Handle chat box -----------------------------------
+
+//Khai báo, Lấy các phần tử cần sử dụng
+var messageBox = document.querySelector(".message-box");
+var chatBox = document.getElementById("chatBox");
+
+// Hàm xử lý khi nhấp vào lớp "message-box"
+function toggleChat() {
+  if (chatBox.style.display === "block") {
+    closeChat();
+  } else {
+    openChat();
+  }
+}
+
+// Hàm xử lý khi nhấp vào bất kỳ nơi nào ngoài khung chat
+function handleClickOutside(event) {
+  if (!chatBox.contains(event.target) && !messageBox.contains(event.target)) {
+    closeChat();
+  }
+}
+
+// Hàm mở khung chat
+function openChat() {
+  chatBox.style.display = "block";
+  document.addEventListener("click", handleClickOutside);
+}
+
+// Hàm đóng khung chat
+function closeChat() {
+  chatBox.style.display = "none";
+  document.removeEventListener("click", handleClickOutside);
+}
+
+function sendMessage() {
+  var messageInput = document.getElementById("chatInput");
+  var messageText = messageInput.value;
+
+  if (messageText.trim() !== "") {
+    var messageElement = document.createElement("div");
+    messageElement.textContent = messageText;
+    document.querySelector(".chat-body").appendChild(messageElement);
+    messageInput.value = "";
+  }
+}
+
+// Gắn sự kiện click cho lớp "message-box"
+messageBox.addEventListener("click", toggleChat);
+
+document
+  .getElementById("chatInput")
+  // Ở đây dùng keydown sẽ bị gửi tn 2 lần
+  .addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Ngăn chặn hành vi mặc định khi nhấn Enter trong input (thường là gửi form)
+
+      sendMessage(); // Gọi hàm gửi tin nhắn
+    }
+  });
